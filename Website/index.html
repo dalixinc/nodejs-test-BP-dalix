@@ -1,34 +1,31 @@
-<!-- Access to his page should be restricted based on an authenticated login session -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Web Page</title>
+    <title>Broker Portal</title>
     <link rel="stylesheet" href="styles/style.css">
+	<script src="scripts/script.js"></script>
   </head>
-  <body>
-    <div class="topnav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+  <body id="login_page">
+	<header id="login_header">
+	  <h1 id="login_h1">Broker Portal</h1>
+	</header>
+    <div class="login-box">
+      <h2>Login</h2>
+		<!-- For the demo this is a GET request, before live this needs to be changed to a POST request to hide the credentials -->
+		<form>
+		  <div class="user-box">
+			<input type="text" id="username" name="username" required="">
+			<label>Username</label>
+		  </div>
+		  <div class="user-box">
+			<input type="password" id="password" name="password" required="">
+			<label>Password</label>
+		  </div>
+		  <button onclick="validate(event)">Login</button>
+		  <span class="error" id="error-msg"></span>
+		</form>
     </div>
-
-    <div class="sidenav">
-      <a href="#">* Useful documents</a>
-      <a href="#">* Code snippets</a>
-      <a href="#">* Live test area</a>
-    </div>
-
-    <div class="main">
-      <h1>Welcome to the Broker Portal</h1>
-      &nbsp;
-      <h3>This is the main content area. There are links to a nunber of useful resources for you ro evaluate our product.</h3>
-      <p>Select from the options below:</p>
-      <ul>
-        <li><a href="https://www.i-prompt.co.uk">Useful document</a></li>
-        <li>Code snippets</li>
-        <li>Live test area</li>
-      </ul>
-    </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
