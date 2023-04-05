@@ -1,93 +1,33 @@
+<!-- Access to his page should be restricted based on an authenticated login session -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Noname Bank - Home Page</title>
-    <style>
-      body {
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        font-size:14px;
-        -moz-transition-property: text-shadow;
-        -moz-transition-duration: 4s;
-        -webkit-transition-property: text-shadow;
-        -webkit-transition-duration: 4s;
-        text-shadow: none;
-      }
-      body.blurry {
-        -moz-transition-property: text-shadow;
-        -moz-transition-duration: 4s;
-        -webkit-transition-property: text-shadow;
-        -webkit-transition-duration: 4s;
-        text-shadow: #fff 0px 0px 25px;
-      }
-      a {
-        color: #55aaff;
-      }
-      .textColumn, .linksColumn {
-        padding: 2em;
-      }
-      .textColumn {
-        position: absolute;
-        top: 0px;
-        right: 50%;
-        bottom: 0px;
-        left: 0px;
-
-        text-align: right;
-        padding-top: 11em;
-        background-color: #3333ff;
-
-      }
-      .textColumn p {
-        width: 75%;
-        float:right;
-      }
-      .linksColumn {
-        position: absolute;
-        top:0px;
-        right: 0px;
-        bottom: 0px;
-        left: 50%;
-
-        background-color: #33342D;
-      }
-
-      h1 {
-        color: #33342D;
-        font-size: 500%;
-        font-weight: normal;
-        margin-bottom: 0em;
-      }
-      h2 {
-        font-size: 200%;
-        font-weight: normal;
-        margin-bottom: 0em;
-      }
-      ul {
-        padding-left: 1em;
-        margin: 0px;
-      }
-      li {
-        margin: 1em 0em;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <div class="textColumn">
-      <h1>Welcome to No Name Bank Broker Portal Improved</h1>
-      <p>Your first AWS Elastic Beanstalk Node.js application is now running on your own dedicated environment in the AWS Cloud</p>
-      <p>This environment is launched with Elastic Beanstalk Node.js Platform</p>
+    <div class="topnav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </div>
-    <div class="linksColumn">
-      <h2>Options</h2>
+
+    <div class="sidenav">
+      <a href="#">* Useful documents</a>
+      <a href="#">* Code snippets</a>
+      <a href="#">* Live test area</a>
+    </div>
+
+    <div class="main">
+      <h1>Welcome to the Broker Portal</h1>
+      &nbsp;
+      <h3>This is the main content area. There are links to a nunber of useful resources for you ro evaluate our product.</h3>
+      <p>Select from the options below:</p>
       <ul>
-        <li><a href="http://3.83.101.170">API Offering overview</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html">AWS Elastic Beanstalk concepts</a></li>
-        <li><a href="https://www.i-prompt.co.uk">iPrompt</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express_elasticache.html">Deploy an Express Application with Amazon ElastiCache to AWS Elastic Beanstalk</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_geddy_elasticache.html">Deploy a Geddy Application with Amazon ElastiCache to AWS Elastic Beanstalk </a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_custom_container.html">Customizing and Configuring a Node.js Container </a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.loggingS3.title.html">Working with Logs</a></li>
+        <li><a href="https://www.i-prompt.co.uk">Useful document</a></li>
+        <li>Code snippets</li>
+        <li>Live test area</li>
       </ul>
     </div>
   </body>
